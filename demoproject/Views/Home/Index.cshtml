@@ -1,11 +1,25 @@
-@{
-    ViewData["Title"] = "Home Page";
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.center {
+  text-align: center;
+  color: blue;
 }
-<div class="text-center">
-    <img src="images/sysmedac.png"  width="400" height="200">
-    <h1 class="display-5">DEMO PROJECT</h1>
-    <h2 class="display-4">ANSIBLE-POC-DOTNET</h2>
-    <p>Deploying Dotnet Application using Ansible in windows OS</a>.</p>
-    <p style="text-align:center"> Date: 16/11/2021</span></p>
-</div>
+</style>
+<title> DEMO-DOTNET </title>
 
+<body style="background-color:white;">
+
+ <img src="images/sysmedac.png"  width="400" height="200">
+
+<h1 style="text-align:center;"> DEMO PROJECT </h1>
+<h2 style="text-align:center"> ANSIBLE-POC-DOTNET </h2>
+<p style="text-align:center">   Deploying Dotnet Application in Windows OS</p>
+<p style="text-align:center"> Date/Time: <span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+</body>
+</html>
