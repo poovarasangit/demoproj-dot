@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - nuget restore
-       - msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /t:build
+      - msbuild $env:PROJECT.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /t:build
 # artifacts:
 #   files:
 #     - '**/*'
