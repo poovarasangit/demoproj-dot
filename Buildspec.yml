@@ -7,8 +7,8 @@ env:
 phases:
   build:
     commands:
-      - cd demoproject && nuget restore
-      - msbuild demoproject.csproj /p:Configuration=Release /p:OutDir=C:\codebuild\artifacts\ /t:build
+      - nuget restore
+      - msbuild $env:PROJECT.csproj /p:Configuration=Release /p:OutDir=C:\codebuild\artifacts\ /t:build
 artifacts:
   files:
     - '**/*'
